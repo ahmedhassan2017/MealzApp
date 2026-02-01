@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity()
         lifecycleScope. launch {
             viewModel.categories.collect { categories ->
                 // Update UI with categories
-                println("Fetched categories: ${categories?.categories }")
+                println("Fetched categories: ${categories }")
 
             }
         }
